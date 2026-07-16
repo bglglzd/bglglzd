@@ -1,4 +1,4 @@
-<h1 align="center">bglglzd · AI Builder</h1>
+<h1 align="center">bglglzd · AI · Software Builder</h1>
 
 <p align="center">
   Building private, local-first AI products for voice and developer workflows.
