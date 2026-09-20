@@ -1,0 +1,42 @@
+name: Refresh public profile graphics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 7 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - scripts/render_profile.py
+      - .github/workflows/profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-graphics
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Render public data only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/render_profile.py
+      - name: Validate public-data boundary
+        # Validate the privacy boundary before publishing generated data.
+        # This step is deliberately separate from the API collection step.
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Publish updated graphics
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh public engineering snapshot'
+            git push
+          fi

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "updated": "2026-09-20",
+  "scope": "Public owned non-fork non-archived repositories; profile excluded",
+  "projects": [
+    {
+      "name": "3uxo",
+      "url": "https://github.com/bglglzd/3uxo",
+      "languages": {
+        "Rust": 236596,
+        "TypeScript": 196682,
+        "CSS": 56236,
+        "HTML": 388
+      },
+      "releases": 41
+    },
+    {
+      "name": "agent-workflows",
+      "url": "https://github.com/bglglzd/agent-workflows",
+      "languages": {
+        "Python": 2566
+      },
+      "releases": 3
+    },
+    {
+      "name": "bugkit",
+      "url": "https://github.com/bglglzd/bugkit",
+      "languages": {},
+      "releases": 0
+    },
+    {
+      "name": "CipherBoard",
+      "url": "https://github.com/bglglzd/CipherBoard",
+      "languages": {
+        "Kotlin": 2431293,
+        "Java": 1531794,
+        "C++": 1393476,
+        "Rust": 165592,
+        "Python": 116569,
+        "PowerShell": 31916,
+        "Shell": 21736,
+        "Makefile": 14449
+      },
+      "releases": 9
+    },
+    {
+      "name": "uxo",
+      "url": "https://github.com/bglglzd/uxo",
+      "languages": {
+        "Rust": 1039545,
+        "TypeScript": 509870,
+        "Nix": 114488,
+        "NSIS": 35872,
+        "CSS": 31421,
+        "Python": 27512,
+        "Swift": 5917,
+        "Shell": 2452,
+        "HTML": 836,
+        "C": 829,
+        "JavaScript": 820
+      },
+      "releases": 2
+    },
+    {
+      "name": "vps-sanity-check",
+      "url": "https://github.com/bglglzd/vps-sanity-check",
+      "languages": {
+        "Shell": 20733
+      },
+      "releases": 0
+    }
+  ],
+  "languages": {
+    "Kotlin": 2431293,
+    "Java": 1531794,
+    "Rust": 1441733,
+    "C++": 1393476,
+    "TypeScript": 706552,
+    "Python": 146647,
+    "Nix": 114488,
+    "CSS": 87657,
+    "Shell": 44921,
+    "NSIS": 35872,
+    "PowerShell": 31916,
+    "Makefile": 14449,
+    "Swift": 5917,
+    "HTML": 1224,
+    "C": 829,
+    "JavaScript": 820
+  }
+}
