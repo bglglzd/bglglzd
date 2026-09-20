@@ -1,8 +1,8 @@
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/hero-light-compact.svg">
   <source media="(max-width: 600px)" srcset="assets/hero-dark-compact.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img src="assets/hero-dark.svg" width="100%" alt="bglglzd — Local intelligence. Useful software. Rust, TypeScript, Kotlin and Python.">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg?v=2">
+  <img src="assets/hero-dark.svg?v=2" width="100%" alt="bglglzd — Local intelligence. Useful software. Rust, TypeScript, Kotlin and Python.">
 </picture>
 
 ### Selected work
