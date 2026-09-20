@@ -49,19 +49,13 @@ def hero(theme,compact=False):
         parts = ['<rect width="480" height="264" rx="16" fill="{bg}"/>',text(24,38,'bglglzd',16,'accent',600,'letter-spacing="2"'),text(24,98,'Local intelligence.',36,weight=650),text(24,142,'Useful software.',36,weight=650),text(24,181,'Voice tools / private workflows / dev experience',13,'muted'),'<path d="M24 204H456" stroke="{line}"/>',text(24,237,'RUST / TYPESCRIPT / KOTLIN / PYTHON',13,'muted',600)]
         return svg(''.join(parts),theme,264,'bglglzd — Local intelligence. Useful software.','Voice tools, private workflows and developer experience.',480)
     parts = ['<rect width="960" height="292" rx="18" fill="{bg}"/>']
-    for radius in (48,82,116,150):
-        parts.append(f'<circle cx="792" cy="136" r="{radius}" fill="none" stroke="{{line}}"/>')
-    parts += ['<path d="M624 136H652L663 117L677 161L693 100L708 171L724 80L741 192L758 61L775 213L792 91L809 179L826 108L843 156L859 126L872 136H929" fill="none" stroke="{accent}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>',
-              '<circle cx="792" cy="20" r="4" fill="{blue}"/><circle cx="874" cy="136" r="4" fill="{blue}"/>',
-              '<path d="M616 248H916" stroke="{line}"/>',
-              text(40,43,'bglglzd',16,'accent',600,'letter-spacing="2"'),
+    parts += [text(40,43,'bglglzd',16,'accent',600,'letter-spacing="2"'),
               text(40,110,'Local intelligence.',47,weight=650,extra='letter-spacing="-1.5"'),
               text(40,165,'Useful software.',47,weight=650,extra='letter-spacing="-1.5"'),
               text(42,202,'Voice tools / private workflows / developer experience',16,'muted'),
               '<path d="M40 226H566" stroke="{line}"/>',
-              text(42,258,'RUST   /   TYPESCRIPT   /   KOTLIN   /   PYTHON',12,'muted',600,'letter-spacing="1.2"'),
-              text(619,269,'BUILT AROUND THE USER',10,'muted',500,'letter-spacing="2"')]
-    return svg(''.join(parts),theme,292,'bglglzd — Local intelligence. Useful software.','Voice tools, private workflows and developer experience. Rust, TypeScript, Kotlin and Python. Decorative orbital signal illustration.')
+              text(42,258,'RUST   /   TYPESCRIPT   /   KOTLIN   /   PYTHON',12,'muted',600,'letter-spacing="1.2"')]
+    return svg(''.join(parts),theme,292,'bglglzd — Local intelligence. Useful software.','Voice tools, private workflows and developer experience. Rust, TypeScript, Kotlin and Python.')
 
 def engineering(data,theme,compact=False):
     projects = data['projects']
