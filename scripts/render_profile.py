@@ -113,7 +113,7 @@ def render(data):
     validate(data)
     files = {'assets/public-metrics.json':json.dumps(data,indent=2)+'\n'}
     for theme in THEMES:
-        files[f'assets/hero-{theme}.svg'] = hero(theme)
+        files[f'assets/hero-text-{theme}.svg'] = hero(theme)
         files[f'assets/engineering-{theme}.svg'] = engineering(data,theme)
         files[f'assets/hero-{theme}-compact.svg'] = hero(theme,compact=True)
         files[f'assets/engineering-{theme}-compact.svg'] = engineering(data,theme,compact=True)
