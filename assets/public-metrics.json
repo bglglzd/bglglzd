@@ -1,19 +1,8 @@
 {
   "schema": 1,
-  "updated": "2026-09-21",
+  "updated": "2026-09-28",
   "scope": "Public owned non-fork non-archived repositories; profile excluded",
   "projects": [
-    {
-      "name": "3uxo",
-      "url": "https://github.com/bglglzd/3uxo",
-      "languages": {
-        "Rust": 236596,
-        "TypeScript": 196682,
-        "CSS": 56236,
-        "HTML": 388
-      },
-      "releases": 41
-    },
     {
       "name": "agent-workflows",
       "url": "https://github.com/bglglzd/agent-workflows",
@@ -21,6 +10,19 @@
         "Python": 2566
       },
       "releases": 3
+    },
+    {
+      "name": "auris",
+      "url": "https://github.com/bglglzd/auris",
+      "languages": {
+        "Rust": 404583,
+        "TypeScript": 299790,
+        "CSS": 81937,
+        "NSIS": 1593,
+        "Shell": 1412,
+        "HTML": 402
+      },
+      "releases": 46
     },
     {
       "name": "bugkit",
@@ -72,19 +74,19 @@
   ],
   "languages": {
     "Kotlin": 2431293,
+    "Rust": 1609720,
     "Java": 1531794,
-    "Rust": 1441733,
     "C++": 1393476,
-    "TypeScript": 706552,
+    "TypeScript": 809660,
     "Python": 146647,
     "Nix": 114488,
-    "CSS": 87657,
-    "Shell": 44921,
-    "NSIS": 35872,
+    "CSS": 113358,
+    "Shell": 46333,
+    "NSIS": 37465,
     "PowerShell": 31916,
     "Makefile": 14449,
     "Swift": 5917,
-    "HTML": 1224,
+    "HTML": 1238,
     "C": 829,
     "JavaScript": 820
   }
