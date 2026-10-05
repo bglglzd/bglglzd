@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "scope": "Public owned non-fork non-archived repositories; profile excluded",
   "projects": [
     {
@@ -15,14 +15,14 @@
       "name": "auris",
       "url": "https://github.com/bglglzd/auris",
       "languages": {
-        "Rust": 404583,
-        "TypeScript": 299790,
-        "CSS": 81937,
+        "Rust": 607941,
+        "TypeScript": 414946,
+        "CSS": 94444,
+        "Shell": 6164,
         "NSIS": 1593,
-        "Shell": 1412,
         "HTML": 402
       },
-      "releases": 46
+      "releases": 57
     },
     {
       "name": "bugkit",
@@ -49,19 +49,19 @@
       "name": "uxo",
       "url": "https://github.com/bglglzd/uxo",
       "languages": {
-        "Rust": 1039545,
-        "TypeScript": 509870,
+        "Rust": 1116727,
+        "TypeScript": 538649,
         "Nix": 114488,
+        "Python": 37051,
         "NSIS": 35872,
-        "CSS": 31421,
-        "Python": 27512,
+        "CSS": 31892,
         "Swift": 5917,
         "Shell": 2452,
+        "JavaScript": 1441,
         "HTML": 836,
-        "C": 829,
-        "JavaScript": 820
+        "C": 829
       },
-      "releases": 2
+      "releases": 3
     },
     {
       "name": "vps-sanity-check",
@@ -74,20 +74,20 @@
   ],
   "languages": {
     "Kotlin": 2431293,
-    "Rust": 1609720,
+    "Rust": 1890260,
     "Java": 1531794,
     "C++": 1393476,
-    "TypeScript": 809660,
-    "Python": 146647,
+    "TypeScript": 953595,
+    "Python": 156186,
+    "CSS": 126336,
     "Nix": 114488,
-    "CSS": 113358,
-    "Shell": 46333,
+    "Shell": 51085,
     "NSIS": 37465,
     "PowerShell": 31916,
     "Makefile": 14449,
     "Swift": 5917,
+    "JavaScript": 1441,
     "HTML": 1238,
-    "C": 829,
-    "JavaScript": 820
+    "C": 829
   }
 }
