@@ -9,7 +9,7 @@
 
 | Project | What it does |
 | :--- | :--- |
-| [**Auris**](https://github.com/bglglzd/3uxo) | Local recording, transcription & AI meeting notes. |
+| [**Auris**](https://github.com/bglglzd/auris) | Local recording, transcription & AI meeting notes. |
 | [**UXO**](https://github.com/bglglzd/uxo) | On-device dictation for Windows. Press, speak, paste. |
 | [**CipherBoard**](https://github.com/bglglzd/CipherBoard) | Offline encrypted Android keyboard with QR pairing. |
 | [**Agent Workflows**](https://github.com/bglglzd/agent-workflows) | Reusable workflows for AI coding agents. |
