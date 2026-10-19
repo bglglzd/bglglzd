@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-12",
+  "updated": "2026-10-19",
   "scope": "Public owned non-fork non-archived repositories; profile excluded",
   "projects": [
     {
@@ -15,14 +15,14 @@
       "name": "auris",
       "url": "https://github.com/bglglzd/auris",
       "languages": {
-        "Rust": 656398,
-        "TypeScript": 449148,
+        "Rust": 658857,
+        "TypeScript": 445628,
         "CSS": 98230,
         "Shell": 6164,
         "NSIS": 1593,
         "HTML": 402
       },
-      "releases": 58
+      "releases": 59
     },
     {
       "name": "bugkit",
@@ -74,10 +74,10 @@
   ],
   "languages": {
     "Kotlin": 2431293,
-    "Rust": 1938717,
+    "Rust": 1941176,
     "Java": 1531794,
     "C++": 1393476,
-    "TypeScript": 987797,
+    "TypeScript": 984277,
     "Python": 156186,
     "CSS": 130122,
     "Nix": 114488,
