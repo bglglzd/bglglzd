@@ -2,7 +2,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/hero-light-compact.svg">
   <source media="(max-width: 600px)" srcset="assets/hero-dark-compact.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/hero-text-light.svg">
-  <img src="assets/hero-text-dark.svg" width="100%" alt="bglglzd — Local intelligence. Useful software. Rust, TypeScript, Kotlin and Python.">
+  <img src="assets/hero-text-dark.svg" width="100%" alt="bglglzd — Local and Useful. Rust, TypeScript, Kotlin and Python.">
 </picture>
 
 ### Selected work
