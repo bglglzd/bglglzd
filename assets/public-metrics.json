@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-09",
+  "updated": "2026-11-11",
   "scope": "Public owned non-fork non-archived repositories; profile excluded",
   "projects": [
     {
@@ -12,14 +12,27 @@
       "releases": 3
     },
     {
+      "name": "askweft",
+      "url": "https://github.com/bglglzd/askweft",
+      "languages": {
+        "Python": 119889,
+        "JavaScript": 31364,
+        "CSS": 23226,
+        "HTML": 10889
+      },
+      "releases": 1
+    },
+    {
       "name": "auris",
       "url": "https://github.com/bglglzd/auris",
       "languages": {
-        "Rust": 658857,
-        "TypeScript": 445628,
+        "Rust": 687101,
+        "TypeScript": 492895,
         "CSS": 98230,
+        "JavaScript": 20922,
         "Shell": 6164,
         "NSIS": 1593,
+        "PowerShell": 1495,
         "HTML": 402
       },
       "releases": 59
@@ -27,7 +40,9 @@
     {
       "name": "bugkit",
       "url": "https://github.com/bglglzd/bugkit",
-      "languages": {},
+      "languages": {
+        "JavaScript": 31315
+      },
       "releases": 0
     },
     {
@@ -35,9 +50,9 @@
       "url": "https://github.com/bglglzd/CipherBoard",
       "languages": {
         "Kotlin": 2431293,
-        "Java": 1531794,
+        "Java": 1535487,
         "C++": 1393476,
-        "Rust": 165592,
+        "Rust": 169360,
         "Python": 116569,
         "PowerShell": 31916,
         "Shell": 21736,
@@ -46,14 +61,65 @@
       "releases": 9
     },
     {
+      "name": "citeafter",
+      "url": "https://github.com/bglglzd/citeafter",
+      "languages": {
+        "Python": 248574,
+        "JavaScript": 34332,
+        "CSS": 18947,
+        "HTML": 7214
+      },
+      "releases": 1
+    },
+    {
+      "name": "faultleaf",
+      "url": "https://github.com/bglglzd/faultleaf",
+      "languages": {
+        "Python": 147811,
+        "HTML": 46573
+      },
+      "releases": 1
+    },
+    {
+      "name": "pactspan",
+      "url": "https://github.com/bglglzd/pactspan",
+      "languages": {
+        "JavaScript": 456043,
+        "CSS": 12256,
+        "Python": 8581,
+        "HTML": 5833
+      },
+      "releases": 1
+    },
+    {
+      "name": "rillprobe",
+      "url": "https://github.com/bglglzd/rillprobe",
+      "languages": {
+        "Python": 55131,
+        "HTML": 24362
+      },
+      "releases": 2
+    },
+    {
+      "name": "roomrill",
+      "url": "https://github.com/bglglzd/roomrill",
+      "languages": {
+        "Python": 186227,
+        "JavaScript": 28826,
+        "CSS": 24416,
+        "HTML": 12588
+      },
+      "releases": 1
+    },
+    {
       "name": "uxo",
       "url": "https://github.com/bglglzd/uxo",
       "languages": {
-        "Rust": 1116727,
-        "TypeScript": 538649,
-        "Nix": 114488,
+        "Rust": 1121792,
+        "TypeScript": 541223,
+        "Nix": 113681,
         "Python": 37051,
-        "NSIS": 35872,
+        "NSIS": 35990,
         "CSS": 31892,
         "Swift": 5917,
         "Shell": 2452,
@@ -67,27 +133,27 @@
       "name": "vps-sanity-check",
       "url": "https://github.com/bglglzd/vps-sanity-check",
       "languages": {
-        "Shell": 20733
+        "Shell": 53083
       },
       "releases": 0
     }
   ],
   "languages": {
     "Kotlin": 2431293,
-    "Rust": 1941176,
-    "Java": 1531794,
+    "Rust": 1978253,
+    "Java": 1535487,
     "C++": 1393476,
-    "TypeScript": 984277,
-    "Python": 156186,
-    "CSS": 130122,
-    "Nix": 114488,
-    "Shell": 51085,
-    "NSIS": 37465,
-    "PowerShell": 31916,
+    "TypeScript": 1034118,
+    "Python": 922399,
+    "JavaScript": 604243,
+    "CSS": 208967,
+    "Nix": 113681,
+    "HTML": 108697,
+    "Shell": 83435,
+    "NSIS": 37583,
+    "PowerShell": 33411,
     "Makefile": 14449,
     "Swift": 5917,
-    "JavaScript": 1441,
-    "HTML": 1238,
     "C": 829
   }
 }

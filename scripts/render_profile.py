@@ -11,8 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 LOGIN = 'bglglzd'
 COLORS = {'Rust':'#e7a77d','TypeScript':'#6da7fa','Kotlin':'#b89aff','Java':'#e9c46a','C++':'#73d8dc','Python':'#f1cf71','JavaScript':'#e6d962','Shell':'#89d99d','Other':'#78939e'}
 THEMES = {
-    'dark': {'bg':'#0d141b','fg':'#eef4f3','muted':'#9aadb4','line':'#283942','accent':'#b4f17e','blue':'#73d8dc'},
-    'light': {'bg':'#f3f6ef','fg':'#162d27','muted':'#52665d','line':'#c6d4c4','accent':'#396e20','blue':'#137c83'},
+    'dark': {'bg':'#101a2a','fg':'#eef4ff','muted':'#a5b3c8','line':'#304259','accent':'#b3cdf5','blue':'#8fbeff'},
+    'light': {'bg':'#f0f4fa','fg':'#24354e','muted':'#65768d','line':'#cfdaea','accent':'#355f9b','blue':'#4676ab'},
 }
 
 def api(path):
@@ -45,17 +45,19 @@ def svg(body,theme,height,title,description,width=960):
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc"><title id="title">{escape(title)}</title><desc id="desc">{escape(description)}</desc><g font-family="Segoe UI, Helvetica, Arial, sans-serif">{body}</g></svg>\n'
 
 def hero(theme,compact=False):
+    width,height = (480,176) if compact else (960,192)
+    tint = '#e2ebf7' if theme=='light' else '#1b2b43'
+    parts = [f'<defs><linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{{bg}}"/><stop offset="1" stop-color="{tint}"/></linearGradient></defs>',
+             f'<rect width="{width}" height="{height}" rx="20" fill="url(#surface)"/>',
+             f'<rect x=".5" y=".5" width="{width-1}" height="{height-1}" rx="19.5" fill="none" stroke="{{line}}"/>',
+             f'<path d="M20 .5H{width-20}" stroke="#fff" stroke-opacity=".35"/>']
     if compact:
-        parts = ['<rect width="480" height="264" rx="16" fill="{bg}"/>',text(24,38,'bglglzd',16,'accent',600,'letter-spacing="2"'),text(24,98,'Local intelligence.',36,weight=650),text(24,142,'Useful software.',36,weight=650),text(24,181,'Voice tools / private workflows / dev experience',13,'muted'),'<path d="M24 204H456" stroke="{line}"/>',text(24,237,'RUST / TYPESCRIPT / KOTLIN / PYTHON',13,'muted',600)]
-        return svg(''.join(parts),theme,264,'bglglzd — Local intelligence. Useful software.','Voice tools, private workflows and developer experience.',480)
-    parts = ['<rect width="960" height="292" rx="18" fill="{bg}"/>']
-    parts += [text(40,43,'bglglzd',16,'accent',600,'letter-spacing="2"'),
-              text(40,110,'Local intelligence.',47,weight=650,extra='letter-spacing="-1.5"'),
-              text(40,165,'Useful software.',47,weight=650,extra='letter-spacing="-1.5"'),
-              text(42,202,'Voice tools / private workflows / developer experience',16,'muted'),
-              '<path d="M40 226H566" stroke="{line}"/>',
-              text(42,258,'RUST   /   TYPESCRIPT   /   KOTLIN   /   PYTHON',12,'muted',600,'letter-spacing="1.2"')]
-    return svg(''.join(parts),theme,292,'bglglzd — Local intelligence. Useful software.','Voice tools, private workflows and developer experience. Rust, TypeScript, Kotlin and Python.')
+        parts += [text(25,75,'bglglzd',44,weight=650,extra='letter-spacing="-1.6"'),
+                  text(27,119,'Rust · TypeScript · Kotlin · Python',18,'muted')]
+    else:
+        parts += [text(39,91,'bglglzd',56,weight=650,extra='letter-spacing="-2"'),
+                  text(42,139,'Rust · TypeScript · Kotlin · Python',20,'muted')]
+    return svg(''.join(parts),theme,height,'bglglzd','Rust, TypeScript, Kotlin and Python.',width)
 
 def engineering(data,theme,compact=False):
     projects = data['projects']
@@ -121,7 +123,7 @@ def render(data):
     for relative,content in files.items():
         path = ROOT/relative
         path.parent.mkdir(parents=True,exist_ok=True)
-        path.write_text(content,encoding='utf-8')
+        path.write_text(content,encoding='utf-8',newline='\n')
 
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
