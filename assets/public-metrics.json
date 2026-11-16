@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-11",
+  "updated": "2026-11-16",
   "scope": "Public owned non-fork non-archived repositories; profile excluded",
   "projects": [
     {
@@ -23,27 +23,15 @@
       "releases": 1
     },
     {
-      "name": "auris",
-      "url": "https://github.com/bglglzd/auris",
-      "languages": {
-        "Rust": 687101,
-        "TypeScript": 492895,
-        "CSS": 98230,
-        "JavaScript": 20922,
-        "Shell": 6164,
-        "NSIS": 1593,
-        "PowerShell": 1495,
-        "HTML": 402
-      },
-      "releases": 59
-    },
-    {
       "name": "bugkit",
       "url": "https://github.com/bglglzd/bugkit",
       "languages": {
-        "JavaScript": 31315
+        "JavaScript": 122329,
+        "HTML": 3272,
+        "Python": 3005,
+        "CSS": 1862
       },
-      "releases": 0
+      "releases": 1
     },
     {
       "name": "CipherBoard",
@@ -79,6 +67,21 @@
         "HTML": 46573
       },
       "releases": 1
+    },
+    {
+      "name": "Memiro",
+      "url": "https://github.com/bglglzd/Memiro",
+      "languages": {
+        "Rust": 687622,
+        "TypeScript": 492897,
+        "CSS": 98230,
+        "JavaScript": 20922,
+        "Shell": 6164,
+        "NSIS": 1593,
+        "PowerShell": 1495,
+        "HTML": 402
+      },
+      "releases": 59
     },
     {
       "name": "pactspan",
@@ -140,15 +143,15 @@
   ],
   "languages": {
     "Kotlin": 2431293,
-    "Rust": 1978253,
+    "Rust": 1978774,
     "Java": 1535487,
     "C++": 1393476,
-    "TypeScript": 1034118,
-    "Python": 922399,
-    "JavaScript": 604243,
-    "CSS": 208967,
+    "TypeScript": 1034120,
+    "Python": 925404,
+    "JavaScript": 695257,
+    "CSS": 210829,
     "Nix": 113681,
-    "HTML": 108697,
+    "HTML": 111969,
     "Shell": 83435,
     "NSIS": 37583,
     "PowerShell": 33411,
